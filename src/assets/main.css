@@ -1,17 +1,51 @@
 @import "./base.css";
 
+@font-face {
+  font-family: 'Inter var experimental';
+  font-weight: 100 900;
+  font-style: oblique 0deg;
+  src: url("/src/assets/font/Inter.var.woff2?t=woff2-variations&v={{inter_var_woff2_v}}") format("woff2-variations"),
+  url("/src/assets/font/Inter.var.woff2?t=woff2&v={{inter_var_woff2_v}}") format("woff2");
+}
+
+/* Fix for Safari where defining font-weight range casues regular style
+   to actually be italic. */
+@font-face {
+  font-family: 'Inter var experimental safari';
+  /* DISABLE font-weight: 400 900; */
+  font-style: oblique 0deg;
+  src: url("/src/assets/font/Inter.var.woff2?t=woff2-variations&v={{inter_var_woff2_v}}") format("woff2-variations"),
+  url("/src/assets/font/Inter.var.woff2?t=woff2&v={{inter_var_woff2_v}}") format("woff2");
+}
+
+/* Alternate two-file setup used for italic where oblique degrees are not
+   supported (MS Edge) */
+@font-face {
+  font-family: 'Inter var single-axis';
+  font-weight: 100 900;
+  font-style: normal;
+  src: url("/src/assets/font/Inter-roman.var.woff2?t=woff2-variations&v={{inter_var_woff2_v}}") format("woff2-variations"),
+  url("/src/assets/font/Inter-roman.var.woff2?t=woff2&v={{inter_var_woff2_v}}") format("woff2");
+}
+@font-face {
+  font-family: 'Inter var single-axis';
+  /*font-weight: 100 900;*/
+  font-style: italic;
+  src: url("/src/assets/font/Inter-italic.var.woff2?t=woff2-variations&v={{inter_var_woff2_v}}") format("woff2-variations"),
+  url("/src/assets/font/Inter-italic.var.woff2?t=woff2&v={{inter_var_woff2_v}}") format("woff2");
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
+  font-family: 'Inter var experimental';
 }
 
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: #646cff;
   transition: 0.4s;
 }
 
