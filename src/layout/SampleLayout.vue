@@ -4,8 +4,8 @@
   </header>
   <div class="wrapper">
     <div class="left-menu">
-      <router-link to="/sample/hello">hello</router-link>
-      <router-link to="/sample/simpleComponent">simple component</router-link>
+      <li><router-link to="/sample/hello">hello</router-link></li>
+      <li><router-link to="/sample/simpleComponent">simple component</router-link></li>
     </div>
     <div class="content">
       <RouterView />
