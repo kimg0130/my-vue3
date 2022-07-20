@@ -12,7 +12,7 @@
 
 <script setup>
 import {ref} from "vue";
-import ChildComponent from "../../src/components/sample/ChildComponent.vue";
+import ChildComponent from "../../components/sample/ChildComponent.vue";
 import TipBox from "../../components/sample/TipBox.vue";
 import SampleTitle from "../../components/sample/SampleTitle.vue";
 
