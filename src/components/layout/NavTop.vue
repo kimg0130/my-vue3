@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/vue3/template">vue3</RouterLink>
     <RouterLink to="/sample/hello">sample</RouterLink>
   </nav>
 </template>

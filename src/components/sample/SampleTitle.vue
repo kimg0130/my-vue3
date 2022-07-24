@@ -5,9 +5,9 @@
   </h2>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
-  hrefId:String
+  hrefId: {type:String, default:''}
 })
 </script>
 

@@ -15,6 +15,11 @@ const sample = [
         path: '/sample/simpleComponent',
         name: 'sample/simpleComponent',
         component: ()=> import('@/views/sample/SimpleComponent.vue')
+      },
+      {
+        path: '/sample/form',
+        name: 'sample/form',
+        component: ()=> import('@/views/sample/FormSamplePage.vue')
       }
     ]
   }

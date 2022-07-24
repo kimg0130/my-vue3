@@ -4,9 +4,7 @@
   </header>
   <div class="wrapper">
     <div class="left-menu">
-      <li><router-link to="/sample/hello">hello</router-link></li>
-      <li><router-link to="/sample/simpleComponent">simple component</router-link></li>
-      <li><router-link to="/sample/form">Form</router-link></li>
+      <li><router-link to="/vue3/template">Template Syntax</router-link></li>
     </div>
     <div class="content">
       <RouterView />
@@ -17,7 +15,7 @@
 <script>
 import NavTop from "@/components/layout/NavTop.vue";
 export default {
-  name: "sample-layout",
+  name: "vue3-layout",
   components: {NavTop}
 }
 </script>

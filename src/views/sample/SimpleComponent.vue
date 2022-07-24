@@ -10,7 +10,7 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {ref} from "vue";
 import ChildComponent from "../../components/sample/ChildComponent.vue";
 import TipBox from "../../components/sample/TipBox.vue";
